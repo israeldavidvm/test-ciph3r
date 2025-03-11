@@ -105,51 +105,6 @@ Solicita el link de acceso al personal autorizado.
 
 #### Vista Lógica de la Arquitectura del Software
 
-En el siguiente diagrama de clases se verán las abstracciones clave en el sistema, sus interacciones y responsabilidades.
-
-```mermaid
-classDiagram
-    class ProductController {
-        +index()
-        +store(Request $request)
-        +show($id)
-        +update(Request $request, $id)
-        +destroy($id)
-        +getPrices($id)
-        +storePrice(Request $request, $id)
-    }
-    class Product {
-        +id
-        +name
-        +description
-        +price
-        +currency_id
-        +tax_cost
-        +manufacturing_cost
-        +timestamps
-        +product_prices()
-    }
-    class ProductPrice {
-        +id
-        +product_id
-        +currency_id
-        +price
-        +timestamps
-    }
-    class Request {
-        +all()
-        +price
-        +currency_id
-    }
-
-    ProductController --|> Product : uses
-    ProductController --|> ProductPrice : uses
-    ProductController --|> Request : uses
-
-    Product "1" -- "*" ProductPrice : has
-```
-
-
 ### Perspectiva de comportamiento
 
 ## Verification and Validation / Validacion y Verificacion
