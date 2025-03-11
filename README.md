@@ -107,11 +107,15 @@ Solicita el link de acceso al personal autorizado.
 
 ### Perspectiva de comportamiento
 
-## Verification and Validation / Validacion y Verificacion
-
 ### Diseño de Base de Datos
 
 ![Diseño de base de datos](image-1.png)
+
+## Verification and Validation / Validacion y Verificacion
+
+Ejecucion de test
+
+![alt text](image-6.png)
 
 ### Uso
 
